@@ -543,11 +543,17 @@
     <!-- ======================================================================= -->
     <div class="relative bg-blue-600 py-32 text-blue-200">
       <!-- Gray box for the top section -->
-      <div class="absolute top-0 inset-x-0 h-48 bg-gray-300"></div>
+      <div
+        class="hidden lg:block absolute top-0 inset-x-0 h-48 bg-gray-300"
+      ></div>
 
-      <div class="container mx-auto px-6 lg:px-0 flex items-center space-x-8">
+      <div
+        class="container mx-auto px-6 lg:px-0 flex flex-col lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0"
+      >
         <!-- left box -->
-        <div class="w-1/3 text-right space-y-2 text-xl pt-12">
+        <div
+          class="order-2 lg:order-1 lg:w-1/3 lg:text-right text-center space-y-2 text-xl pt-12"
+        >
           <p>
             <strong class="font-bold text-white"> at </strong> a smooth pace
           </p>
@@ -556,7 +562,7 @@
         </div>
         <!-- pricing box -->
         <div
-          class="relative w-1/3 bg-white p-8 text-gray-800 rounded-md shadow-2xl border-8 border-purple-700 text-center space-y-4 transform hover:scale-105 transition duration-500"
+          class="relative lg:w-1/3 w-full lg:order-2 order-1 bg-white p-8 text-gray-800 rounded-md shadow-2xl border-8 border-purple-700 text-center space-y-4 transform hover:scale-105 transition duration-500"
         >
           <!-- showoff beam thingy -->
           <div
@@ -584,7 +590,9 @@
           >
         </div>
         <!-- right box -->
-        <div class="w-1/3 space-y-2 text-xl pt-12">
+        <div
+          class="order-3 lg:w-1/3 space-y-2 text-xl pt-12 text-center lg:text-left"
+        >
           <p>
             bababababab
             <strong class="font-bold text-white">black sheep</strong>
