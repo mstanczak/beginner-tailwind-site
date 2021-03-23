@@ -141,9 +141,7 @@
           </div>
         </div>
         <script>
-          fetch(
-            "https://api.weatherstack.com/current?access_key=cbbfa14fa76ab5b6c8ec6a4d3dbdb6de&zzzzzzzzzzzzzzzzzzzzzquery=19034"
-          )
+          fetch("https://api.weatherstack.com/current?access_key=")
             .then((response) => response.json())
             .then((data) =>
               (document.getElementById("windSpeed").innerHTML =
